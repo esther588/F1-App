@@ -21,19 +21,4 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and().httpBasic();
 
     }
-
-    @Autowired
-    public void configureGlobal(AuthenticationManagerBuilder authentication)
-            throws Exception
-    {
-        authentication.inMemoryAuthentication()
-                .withUser("admin")
-                .password(passwordEncoder().encode("nimda"))
-                .authorities("ROLE_USER");
-    }
-
-    @Bean
-    public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
 }
