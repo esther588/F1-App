@@ -4,13 +4,13 @@ public class User {
 
     private String firstName;
     private String lastName;
-    private String id;
+    private String user;
     private int age;
 
-    public User(String firstName, String lastName, String id, int age) {
+    public User(String firstName, String lastName, String user, int age) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.id = id;
+        this.user = user;
         this.age = age;
     }
 
@@ -30,12 +30,12 @@ public class User {
         this.lastName = lastName;
     }
 
-    public String getId() {
-        return id;
+    public String getUser() {
+        return user;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setUser(String user) {
+        this.user = user;
     }
 
     public int getAge() {
