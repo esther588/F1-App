@@ -12,10 +12,12 @@
 	<artifactId>F1-App</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>F1-App</name>
-	<description>Demo project for Spring Boot</description>
-	<properties>
-		<java.version>18</java.version>
-	</properties>
+	<description>An social media network exclusively for Formula 1 fans to make posts and chat with each other.</description>
+    <properties>
+        <java.version>16</java.version>
+        <maven.compiler.source>1.16</maven.compiler.source>
+        <maven.compiler.target>1.16</maven.compiler.target>
+    </properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
