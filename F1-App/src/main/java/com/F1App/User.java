@@ -2,20 +2,28 @@ package com.F1App;
 
 public class User {
 
+    private Long id;
     private String firstName;
     private String lastName;
-    private String user;
     private String email;
     private String password;
     private int age;
 
-    public User(String firstName, String lastName, String user, String email, String password, int age) {
+    public User(Long id, String firstName, String lastName, String email, String password, int age) {
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.user = user;
         this.email = email;
         this.password = password;
         this.age = age;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getFirst() {
@@ -32,14 +40,6 @@ public class User {
 
     public void setLast(String lastName) {
         this.lastName = lastName;
-    }
-
-    public String getUser() {
-        return user;
-    }
-
-    public void setUser(String user) {
-        this.user = user;
     }
 
     public String getEmail() {
