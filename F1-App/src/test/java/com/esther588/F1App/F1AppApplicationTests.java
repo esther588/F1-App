@@ -1,4 +1,4 @@
-package com.example.F1App;
+package com.esther588.F1App;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
