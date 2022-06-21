@@ -1,0 +1,32 @@
+package com.esther588.F1App.user;
+
+import com.esther588.F1App.entity.User;
+import lombok.AllArgsConstructor;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Service;
+
+import java.text.MessageFormat;
+import java.util.Optional;
+
+@Service
+@AllArgsConstructor
+public class UserService implements UserDetailsService {
+
+    private final UserRepository userRepository;
+
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+
+        final Optional<User> optionalUser = userRepository.findByUsername(username);
+
+        if (optionalUser.isPresent()) {
+            return optionalUser.get();
+        } else {
+            throw new UsernameNotFoundException(MessageFormat.format("User does not exist!", username));
+        }
+    }
+}
