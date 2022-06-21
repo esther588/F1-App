@@ -29,4 +29,11 @@ public class UserService implements UserDetailsService {
             throw new UsernameNotFoundException(MessageFormat.format("User does not exist!", username));
         }
     }
+
+    public void signUpUser(User user) {
+
+        final String encryptedPassword = BCryptPasswordEncoder.encode(user.getPassword());
+        user.setPassword(encryptedPassword);
+        userRepository.save(user);
+    }
 }
