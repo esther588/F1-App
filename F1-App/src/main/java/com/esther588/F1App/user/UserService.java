@@ -17,6 +17,7 @@ import java.util.Optional;
 public class UserService implements UserDetailsService {
 
     private final UserRepository userRepository;
+    private final BCryptPasswordEncoder bCryptPasswordEncoder;
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
@@ -32,7 +33,7 @@ public class UserService implements UserDetailsService {
 
     public void signUpUser(User user) {
 
-        final String encryptedPassword = BCryptPasswordEncoder.encode(user.getPassword());
+        final String encryptedPassword = bCryptPasswordEncoder.encode(user.getPassword());
         user.setPassword(encryptedPassword);
         userRepository.save(user);
     }
