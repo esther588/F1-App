@@ -16,25 +16,26 @@ import java.util.Optional;
 @AllArgsConstructor
 public class UserService implements UserDetailsService {
 
-    private final UserRepository userRepository;
-    private final BCryptPasswordEncoder bCryptPasswordEncoder;
+	private final UserRepository userRepository;
 
-    @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+	private final BCryptPasswordEncoder bCryptPasswordEncoder;
 
-        final Optional<User> optionalUser = userRepository.findByUsername(username);
+	@Override
+	public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
 
-        if (optionalUser.isPresent()) {
-            return optionalUser.get();
-        } else {
-            throw new UsernameNotFoundException(MessageFormat.format("User does not exist!", username));
-        }
-    }
+		final Optional<User> optionalUser = userRepository.findByEmail(email);
 
-    public void signUpUser(User user) {
+		return optionalUser.orElseThrow(() -> new UsernameNotFoundException(MessageFormat.format("User with email {0} cannot be found.", email)));
 
-        final String encryptedPassword = bCryptPasswordEncoder.encode(user.getPassword());
-        user.setPassword(encryptedPassword);
-        userRepository.save(user);
-    }
+	}
+
+	public void signUpUser(User user) {
+
+		final String encryptedPassword = bCryptPasswordEncoder.encode(user.getPassword());
+
+		user.setPassword(encryptedPassword);
+
+		final User createdUser = userRepository.save(user);
+
+	}
 }

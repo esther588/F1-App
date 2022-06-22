@@ -6,28 +6,33 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Optional;
 
-@RestController
+@Controller
 @AllArgsConstructor
 public class UserController {
-    private final UserService userService;
 
-    @GetMapping("/log-in")
-    String signIn() {
-        return "log-in";
-    }
+	private final UserService userService;
 
-    @GetMapping("/sign-up")
-    String signUpPage(User user) {
-        return "sign-up";
-    }
+	@GetMapping("/log-in")
+	String signIn() {
 
-    @PostMapping("/sign-up")
-    String signUp(User user) {
-        userService.signUpUser(user);
-        return "redirect:/log-in";
-    }
+		return "log-in";
+	}
+
+	@GetMapping("/sign-up")
+	String signUpPage(User user) {
+
+		return "sign-up";
+	}
+
+	@PostMapping("/sign-up")
+	String signUp(User user) {
+
+		userService.signUpUser(user);
+
+		return "redirect:/log-in";
+	}
+
 }
