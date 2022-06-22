@@ -5,11 +5,11 @@
 </head>
 <body>
 <form role="form" th:action="@{/sign-up}" th:method="post" th:object="${user}">
-    <lable>Name</lable>
-    <input type="text" id="name" name="name" th:field="*{name}">
+    <lable>First Name</lable>
+    <input type="text" id="first-name" name="first-name" th:field="*{first-name}">
 
-    <lable>Surname</lable>
-    <input type="text" id="surname" name="surname" th:field="*{surname}">
+    <lable>Last Name</lable>
+    <input type="text" id="last-name" name="last-name" th:field="*{last-name}">
 
     <lable>Email</lable>
     <input type="text" id="email" name="email" th:field="*{email}">
