@@ -17,21 +17,17 @@ public class UserController {
 
 	@GetMapping("/log-in")
 	String signIn() {
-
 		return "log-in";
 	}
 
 	@GetMapping("/sign-up")
 	String signUpPage(User user) {
-
 		return "sign-up";
 	}
 
 	@PostMapping("/sign-up")
 	String signUp(User user) {
-
 		userService.signUpUser(user);
-
 		return "redirect:/log-in";
 	}
 

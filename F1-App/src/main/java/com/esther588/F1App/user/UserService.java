@@ -17,25 +17,17 @@ import java.util.Optional;
 public class UserService implements UserDetailsService {
 
 	private final UserRepository userRepository;
-
 	private final BCryptPasswordEncoder bCryptPasswordEncoder;
 
 	@Override
 	public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
-
 		final Optional<User> optionalUser = userRepository.findByEmail(email);
-
 		return optionalUser.orElseThrow(() -> new UsernameNotFoundException(MessageFormat.format("User with email {0} cannot be found.", email)));
-
 	}
 
 	public void signUpUser(User user) {
-
 		final String encryptedPassword = bCryptPasswordEncoder.encode(user.getPassword());
-
 		user.setPassword(encryptedPassword);
-
 		final User createdUser = userRepository.save(user);
-
 	}
 }

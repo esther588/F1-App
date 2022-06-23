@@ -24,13 +24,9 @@ public class User implements UserDetails {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-
 	private String firstName;
-
 	private String lastName;
-
 	private String email;
-
 	private String password;
 
 	@Builder.Default
@@ -44,7 +40,6 @@ public class User implements UserDetails {
 
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
-
 		final SimpleGrantedAuthority simpleGrantedAuthority = new SimpleGrantedAuthority(userRole.name());
 		return Collections.singletonList(simpleGrantedAuthority);
 	}
