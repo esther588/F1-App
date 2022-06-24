@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/F1-App.iml" filepath="$PROJECT_DIR$/.idea/F1-App.iml" />
+      <module fileurl="file://$PROJECT_DIR$/F1-App/spring-boot-user-registration.iml" filepath="$PROJECT_DIR$/F1-App/spring-boot-user-registration.iml" />
+    </modules>
+  </component>
+</project>
