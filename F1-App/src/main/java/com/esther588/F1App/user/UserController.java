@@ -13,7 +13,7 @@ public class UserController {
 	private final UserService userService;
 
 	@GetMapping("/log-in")
-	String signIn() {
+	String logIn() {
 		return "log-in";
 	}
 
