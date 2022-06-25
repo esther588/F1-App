@@ -5,20 +5,8 @@
     <link th:href="@{/css/style.css}" rel="stylesheet" />
 </head>
 <body>
-<form role="form" th:action="@{/sign-up}" th:method="post" th:object="${user}">
-    <lable>First Name</lable>
-    <input type="text" id="firstName" name="firstName" th:field="*{firstName}">
+<div class="form-structor">
+</div>
 
-    <lable>Last Name</lable>
-    <input type="text" id="lastName" name="lastName" th:field="*{lastName}">
-
-    <lable>Email</lable>
-    <input type="text" id="email" name="email" th:field="*{email}">
-
-    <lable>Password</lable>
-    <input type="password" id="password" name="password" th:field="*{password}">
-
-    <input type="submit">
-</form>
 </body>
 </html>
