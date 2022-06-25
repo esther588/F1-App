@@ -11,7 +11,6 @@
         <form class="form-holder" role="form" th:action="@{/sign-up}" th:method="post" th:object="${user}">
             <input class="input" type="text" id="firstName" name="firstName" placeholder="First Name" th:field="*{firstName}">
             <input class="input" type="text" id="lastName" name="lastName" placeholder="Last Name" th:field="*{lastName}">
-            <input class="input" type="text" id="email" name="email" placeholder="Email" th:field="*{email}">
             <input class="input" type="username" id="username" name="username" placeholder="Username" th:field="*{username}">
             <input class="input" type="password" id="password" name="password" placeholder="Password" th:field="*{password}">
             <button class="submit-btn">Sign Up</button>
