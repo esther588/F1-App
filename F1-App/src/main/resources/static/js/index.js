@@ -5,7 +5,7 @@ signupBtn.addEventListener('click', (e) => {
 	Array.from(e.target.parentNode.classList).find((element) => {
 		if(element !== "slide-up") {
 			parent.classList.add('slide-up')
-		}else{
+		} else {
 			loginBtn.parentNode.parentNode.classList.add('slide-up')
 			parent.classList.remove('slide-up')
 		}
