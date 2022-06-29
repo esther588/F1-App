@@ -27,16 +27,16 @@ public class User implements UserDetails {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-	@NotBlank
+	@NotNull(message = "First name cannot be blank.")
 	private String firstName;
 
-	@NotBlank
+	@NotNull(message = "Last name cannot be blank.")
 	private String lastName;
 
-	@NotBlank
+	@NotNull(message = "Username cannot be blank.")
 	private String username;
 
-	@NotBlank
+	@NotNull(message = "Password cannot be blank.")
 	@Size(min = 8, max = 15)
 	private String password;
 
