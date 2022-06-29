@@ -12,6 +12,8 @@ import javax.persistence.Id;
 import java.util.Collection;
 import java.util.Collections;
 
+import javax.validation.constraints.*;
+
 @Getter
 @Setter
 @Builder
