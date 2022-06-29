@@ -20,7 +20,7 @@ public class UserController {
 	@PostMapping("/entry")
 	String signUp(User user) {
 		userService.signUpUser(user);
-		return "redirect:/log-in";
+		return "redirect:/homepage";
 	}
 
 	@GetMapping("/homepage")
