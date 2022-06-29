@@ -27,9 +27,17 @@ public class User implements UserDetails {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
+	@NotBlank
 	private String firstName;
+
+	@NotBlank
 	private String lastName;
+
+	@NotBlank
 	private String username;
+
+	@NotBlank
+	@Size(min = 8, max = 15)
 	private String password;
 
 	@Builder.Default
