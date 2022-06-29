@@ -18,7 +18,7 @@ public class UserController {
 	}
 
 	@GetMapping("/sign-up")
-	String signUpPage(User user) {
+	String signUpPage() {
 		return "sign-up";
 	}
 
