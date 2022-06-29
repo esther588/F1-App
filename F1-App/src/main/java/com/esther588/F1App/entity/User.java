@@ -34,10 +34,11 @@ public class User implements UserDetails {
 	private String lastName;
 
 	@NotBlank(message = "Username cannot be blank.")
+	@Size(max = 15, message = "Username must be at most 15 characters.")
 	private String username;
 
 	@NotBlank(message = "Password cannot be blank.")
-	@Size(min = 8, max = 15)
+	@Size(min = 8, max = 15, message = "Password must be at least 5 characters and at most 15 characters.")
 	private String password;
 
 	@Builder.Default
