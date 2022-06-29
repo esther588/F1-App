@@ -12,20 +12,20 @@ public class UserController {
 
 	private final UserService userService;
 
-	@GetMapping("/entry")
-	String signUpPage(User user) {
-		return "entry";
+	@GetMapping("/log-in")
+	String logIn() {
+		return "log-in";
 	}
 
-	@PostMapping("/entry")
+	@GetMapping("/sign-up")
+	String signUpPage(User user) {
+		return "sign-up";
+	}
+
+	@PostMapping("/sign-up")
 	String signUp(User user) {
 		userService.signUpUser(user);
-		return "redirect:/homepage";
-	}
-
-	@GetMapping("/homepage")
-	String homepage() {
-		return "homepage";
+		return "redirect:/log-in";
 	}
 
 }
