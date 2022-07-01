@@ -9,6 +9,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.text.MessageFormat;
+import java.util.Optional;
 
 @Service
 @AllArgsConstructor
@@ -19,17 +20,18 @@ public class UserService implements UserDetailsService {
 
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		User user = userRepository.findByUsername(username);
-		if(user == null) {
+		final Optional<User> optionalUser = userRepository.findByUsername(username);
+		if (optionalUser.isPresent()) {
+			return optionalUser.get();
+		}
+		else {
 			throw new UsernameNotFoundException(MessageFormat.format("User does not exist!", username));
 		}
-		return user;
 	}
 
 	public void signUpUser(User user) {
 		final String encryptedPassword = bCryptPasswordEncoder.encode(user.getPassword());
 		user.setPassword(encryptedPassword);
 		final User createdUser = userRepository.save(user);
-		user.setEnabled(true);
 	}
 }
