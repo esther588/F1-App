@@ -17,8 +17,13 @@ public class UserController {
 	private final UserService userService;
 
 	@GetMapping("/log-in")
-	String logIn() {
+	String logInPage() {
 		return "log-in";
+	}
+
+	@PostMapping("/sign-up")
+	public String logIn() {
+		return "redirect:/homepage";
 	}
 
 	@GetMapping("/sign-up")
