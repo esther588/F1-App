@@ -21,7 +21,7 @@ public class UserController {
 		return "log-in";
 	}
 
-	@PostMapping("/sign-up")
+	@PostMapping("/log-in")
 	public String logIn() {
 		return "redirect:/homepage";
 	}
