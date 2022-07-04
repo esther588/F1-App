@@ -23,6 +23,7 @@ public class UserService implements UserDetailsService {
 		if (user == null) {
 			throw new UsernameNotFoundException(MessageFormat.format("User does not exist!", username));
 		}
+		return user;
 	}
 
 	public void signUpUser(User user) {
