@@ -38,7 +38,7 @@ public class User implements UserDetails {
 	private String username;
 
 	@NotBlank(message = "Password cannot be blank.")
-	@Size(min = 5, max = 15, message = "Password must be at least 5 characters and at most 15 characters.")
+	@Size(min = 8, message = "Password must be at least 8 characters.")
 	private String password;
 
 	@Builder.Default
