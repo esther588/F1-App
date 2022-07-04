@@ -7,9 +7,11 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Set;
 
 import javax.persistence.*;
 import javax.validation.constraints.*;
+import javax.management.relation.Role;
 
 @Getter
 @Setter
@@ -18,7 +20,7 @@ import javax.validation.constraints.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "Users")
+@Table(name = "User")
 public class User implements UserDetails {
 
 	@Id
@@ -47,6 +49,9 @@ public class User implements UserDetails {
 
 	@Builder.Default
 	private Boolean enabled = false;
+
+	@ManyToMany
+	private Set<Role> roles;
 
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
