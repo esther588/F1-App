@@ -4,13 +4,11 @@ import com.esther588.F1App.entity.User;
 import com.esther588.F1App.repository.RoleRepository;
 import com.esther588.F1App.repository.UserRepository;
 import lombok.AllArgsConstructor;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.text.MessageFormat;
+import java.util.HashSet;
 
 @Service
 @AllArgsConstructor
