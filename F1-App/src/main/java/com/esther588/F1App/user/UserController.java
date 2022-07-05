@@ -17,7 +17,7 @@ public class UserController {
 	private final UserService userService;
 
 	@GetMapping("/sign-up")
-	String signUpPage(User user) {
+	String getSignUp(User user) {
 		return "sign-up";
 	}
 
@@ -32,17 +32,17 @@ public class UserController {
 	}
 
 	@GetMapping("/log-in")
-	String logInPage() {
+	String getLogin() {
 		return "log-in";
 	}
 
 	@PostMapping("/log-in")
-	public String logIn() {
+	public String login() {
 		return "redirect:/homepage";
 	}
 
 	@GetMapping("/homepage")
-	String homepage() {
+	String getHomepage() {
 		return "homepage";
 	}
 
