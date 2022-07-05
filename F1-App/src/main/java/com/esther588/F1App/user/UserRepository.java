@@ -1,4 +1,4 @@
-package com.esther588.F1App.repository;
+package com.esther588.F1App.user;
 
 import com.esther588.F1App.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;

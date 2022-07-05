@@ -1,7 +1,6 @@
 package com.esther588.F1App.user;
 
 import com.esther588.F1App.entity.User;
-import com.esther588.F1App.repository.UserRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
