@@ -17,7 +17,7 @@ public class UserController {
 	private final UserService userService;
 
 	@GetMapping("/sign-up")
-	String getSignUp(User user) {
+	String getSignUp() {
 		return "sign-up";
 	}
 
