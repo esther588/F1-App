@@ -22,13 +22,9 @@ public class UserController {
 	}
 
 	@PostMapping("/sign-up")
-	public String signUp(@Valid @ModelAttribute("signUpForm") User user, BindingResult bindingResult) {
-		if (bindingResult.hasErrors()) {
-			return "sign-up";
-		} else {
-			userService.signUpUser(user);
-			return "redirect:/log-in";
-		}
+	public String signUp(User user) {
+		userService.signUpUser(user);
+		return "redirect:/log-in";
 	}
 
 	@GetMapping("/log-in")
