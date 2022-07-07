@@ -27,9 +27,11 @@ public class User implements UserDetails {
 	private Long id;
 
 	@NotBlank(message = "First name cannot be blank.")
+	@Column(name = "first_name")
 	private String firstName;
 
 	@NotBlank(message = "Last name cannot be blank.")
+	@Column(name = "last_name")
 	private String lastName;
 
 	@NotBlank(message = "Username cannot be blank.")
