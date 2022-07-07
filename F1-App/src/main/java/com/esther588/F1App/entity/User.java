@@ -36,6 +36,7 @@ public class User implements UserDetails {
 
 	@NotBlank(message = "Username cannot be blank.")
 	@Size(max = 15, message = "Username must be at most 15 characters.")
+	@Column(name = "username")
 	private String username;
 
 	@NotBlank(message = "Password cannot be blank.")
