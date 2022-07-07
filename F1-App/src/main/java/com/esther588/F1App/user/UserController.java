@@ -22,7 +22,7 @@ public class UserController {
 	}
 
 	@PostMapping("/sign-up")
-	public String signUp(@Valid @ModelAttribute("Users") User user, BindingResult bindingResult) {
+	public String signUp(@Valid @ModelAttribute("signUpForm") User user, BindingResult bindingResult) {
 		if (bindingResult.hasErrors()) {
 			return "sign-up";
 		} else {
