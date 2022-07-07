@@ -17,7 +17,8 @@ import javax.validation.constraints.*;
 @EqualsAndHashCode
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity(name = "Users")
+@Entity
+@Table(name = "Users")
 public class User implements UserDetails {
 
 	@Id
