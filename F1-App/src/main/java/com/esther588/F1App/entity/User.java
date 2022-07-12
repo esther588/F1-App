@@ -31,7 +31,7 @@ public class User implements UserDetails {
 	private String firstName;
 
 	@NotBlank(message = "Last name cannot be blank.")
-	@Column(name = "last_name")
+	@Column(name = "last_name", unique = true)
 	private String lastName;
 
 	@NotBlank(message = "Username cannot be blank.")
