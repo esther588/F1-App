@@ -32,12 +32,12 @@ public class UserController {
 	}
 
 	@GetMapping("/log-in")
-	String getLogin() {
+	String getLogIn() {
 		return "log-in";
 	}
 
 	@PostMapping("/log-in")
-	public String login() {
+	public String logIn() {
 		return "redirect:/homepage";
 	}
 
