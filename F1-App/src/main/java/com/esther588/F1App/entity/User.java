@@ -18,7 +18,7 @@ import javax.validation.constraints.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "Users")
+@Table(name = "Users", uniqueConstraints = {@UniqueConstraint(columnNames={"username"})})
 public class User implements UserDetails {
 
 	@Id
@@ -31,12 +31,12 @@ public class User implements UserDetails {
 	private String firstName;
 
 	@NotBlank(message = "Last name cannot be blank.")
-	@Column(name = "last_name", unique = true)
+	@Column(name = "last_name")
 	private String lastName;
 
 	@NotBlank(message = "Username cannot be blank.")
 	@Size(max = 15, message = "Username must be at most 15 characters.")
-	@Column(name = "username")
+	@Column(name = "username", unique = true)
 	private String username;
 
 	@NotBlank(message = "Password cannot be blank.")
