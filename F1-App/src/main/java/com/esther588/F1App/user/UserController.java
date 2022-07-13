@@ -43,7 +43,6 @@ public class UserController {
 
 	@PostMapping("/log-in")
 	public String logIn(@Valid BindingResult bindingResult) {
-		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 		if (bindingResult.hasErrors()) {
 			return "log-in";
 		} else {
