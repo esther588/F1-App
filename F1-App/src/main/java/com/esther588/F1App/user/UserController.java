@@ -45,7 +45,7 @@ public class UserController {
 	public String logIn(Model model) {
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 		if (!(auth instanceof AnonymousAuthenticationToken)) {
-			return "homepage";
+			return "redirect:/homepage";
 		} else {
 			return "log-in";
 		}
