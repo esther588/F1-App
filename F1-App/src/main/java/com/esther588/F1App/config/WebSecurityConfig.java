@@ -20,6 +20,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 		http.formLogin()
 				.defaultSuccessUrl("/homepage/**", true)
+				.failureUrl("/log-in-error")
 				.loginPage("/log-in")
 				.permitAll()
 				.and()
