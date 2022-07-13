@@ -27,7 +27,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 				.antMatchers("/sign-up/**", "/log-in/**", "/homepage/**", "/css/**", "/js/**")
 				.permitAll()
 				.anyRequest()
-				.authenticated();
+				.authenticated()
+				.and()
+				.build();
 	}
 
 	@Autowired
