@@ -42,12 +42,12 @@ public class UserController {
 	}
 
 	@PostMapping("/log-in")
-	public String logIn(Model model) {
+	public String logIn(@Valid BindingResult bindingResult) {
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-		if (!(auth instanceof AnonymousAuthenticationToken)) {
-			return "redirect:/homepage";
-		} else {
+		if (bindingResult.hasErrors()) {
 			return "log-in";
+		} else {
+			return "redirect:/homepage";
 		}
 	}
 
