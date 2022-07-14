@@ -18,17 +18,18 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http.formLogin()
-				.defaultSuccessUrl("/homepage", true)
-				.failureUrl("/log-in-error")
-				.loginPage("/log-in")
-				.permitAll()
-				.and()
-				.authorizeRequests()
+		http.authorizeRequests()
 				.antMatchers("/sign-up/**", "/log-in/**", "/homepage/**", "/css/**", "/js/**")
 				.permitAll()
 				.anyRequest()
-				.authenticated();
+				.authenticated()
+				.and()
+				.formLogin()
+				.loginPage("/log-in")
+				.loginProcessingUrl("/process-log-in")
+				.defaultSuccessUrl("/homepage")
+				.failureUrl("/log-in-error")
+				.permitAll();;
 	}
 
 	@Autowired
