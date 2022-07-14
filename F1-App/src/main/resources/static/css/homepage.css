@@ -76,3 +76,18 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+@media screen and (max-width: 1210px) {
+  .right-side {
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: 0.3s;
+    height: 100%;
+    transform: translateX(280px);
+    z-index: 4;
+  }
+  .right-side.active {
+    transform: translatex(0);
+  }
+}
