@@ -112,3 +112,7 @@ body {
    top: 0;
    background: linear-gradient(to bottom, #151728 0%, #151728 76%, rgba(21, 23, 40, 0) 100%);
  }
+
+ .side-wrapper {
+   padding: 30px;
+ }
