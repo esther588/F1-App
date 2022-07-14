@@ -23,3 +23,14 @@ body {
   overflow: hidden;
   margin: 0 auto;
 }
+
+.left-side {
+  width: 260px;
+  border-right: 1px solid #272a3a;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+  background-color: #151728;
+  overflow: auto;
+  flex-shrink: 0;
+}
