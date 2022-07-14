@@ -26,7 +26,7 @@ body {
 
 .left-side {
   width: 260px;
-  border-right: 1px solid #272a3a;
+  border-right: 1px solid #ffffff;
   display: flex;
   flex-direction: column;
   transition: 0.3s;
