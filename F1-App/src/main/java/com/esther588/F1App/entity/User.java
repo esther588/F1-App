@@ -48,10 +48,10 @@ public class User implements UserDetails {
 	private UserRole userRole = UserRole.USER;
 
 	@Builder.Default
-	private Boolean locked = false;
+	private Boolean locked = true;
 
 	@Builder.Default
-	private Boolean enabled = false;
+	private Boolean enabled = true;
 
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
@@ -76,7 +76,7 @@ public class User implements UserDetails {
 
 	@Override
 	public boolean isAccountNonLocked() {
-		return true;
+		return locked;
 	}
 
 	@Override
