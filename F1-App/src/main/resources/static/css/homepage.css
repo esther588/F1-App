@@ -184,3 +184,11 @@ body {
    overflow: auto;
    background-color: #5E8B7E;
  }
+
+ .profile {
+   position: relative;
+   height: 40vh;
+   min-height: 250px;
+   max-height: 350px;
+   z-index: 1;
+ }
