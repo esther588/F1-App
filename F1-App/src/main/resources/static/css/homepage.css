@@ -219,3 +219,13 @@ body {
    filter: blur(50px);
    opacity: 0.7;
  }
+
+ .profile-menu {
+   position: absolute;
+   bottom: 0;
+   padding-left: 200px;
+   background: #151728;
+   width: 100%;
+   display: flex;
+   border-radius: 0 0 4px 4px;
+ }
