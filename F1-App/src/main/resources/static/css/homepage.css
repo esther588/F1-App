@@ -242,4 +242,13 @@ body {
     background-color: #1b1d2e;
     border-bottom: 3px solid #1488fa;
   }
-  
+
+ .profile-avatar {
+     position: absolute;
+     align-items: center;
+     display: flex;
+     z-index: 1;
+     bottom: 16px;
+     left: 24px;
+  }
+ 
