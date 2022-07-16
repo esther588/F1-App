@@ -177,3 +177,10 @@ body {
  .search-bar input::placeholder {
    color: #5c5d71;
  }
+
+ .main-container {
+   padding: 20px;
+   flex-grow: 1;
+   overflow: auto;
+   background-color: #24273b;
+ }
