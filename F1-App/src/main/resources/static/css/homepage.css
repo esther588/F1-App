@@ -30,7 +30,7 @@ body {
   display: flex;
   flex-direction: column;
   transition: 0.3s;
-  background-color: #8fa781;
+  background-color: #5E8B7E;
   overflow: auto;
   flex-shrink: 0;
 }
