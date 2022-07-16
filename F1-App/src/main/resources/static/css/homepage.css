@@ -142,3 +142,7 @@ body {
    display: flex;
    align-items: center;
  }
+
+ .side-menu a:hover {
+   color: #fff;
+ }
