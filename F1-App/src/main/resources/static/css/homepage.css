@@ -135,3 +135,10 @@ body {
    margin-right: 16px;
    width: 16px;
  }
+
+ .side-menu a {
+   text-decoration: none;
+   color: #9c9cab;
+   display: flex;
+   align-items: center;
+ }
