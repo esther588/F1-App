@@ -123,3 +123,10 @@ body {
    font-weight: 600;
    margin-bottom: 20px;
  }
+
+ .side-menu {
+   display: flex;
+   flex-direction: column;
+   font-size: 15px;
+   white-space: nowrap;
+ }
