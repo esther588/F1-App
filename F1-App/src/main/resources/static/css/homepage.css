@@ -130,3 +130,8 @@ body {
    font-size: 15px;
    white-space: nowrap;
  }
+
+ .side-menu svg {
+   margin-right: 16px;
+   width: 16px;
+ }
