@@ -115,3 +115,11 @@ body {
  .side-wrapper {
    padding: 30px;
  }
+
+ .side-title {
+   font-family: "DM Sans", sans-serif;
+   color: #5c5e6e;
+   font-size: 15px;
+   font-weight: 600;
+   margin-bottom: 20px;
+ }
