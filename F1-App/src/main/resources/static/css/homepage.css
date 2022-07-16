@@ -229,3 +229,10 @@ body {
    display: flex;
    border-radius: 0 0 4px 4px;
  }
+
+  .profile-menu-link {
+    padding: 20px 16px;
+    color: #5c5e6e;
+    transition: 0.3s;
+    cursor: pointer;
+  }
