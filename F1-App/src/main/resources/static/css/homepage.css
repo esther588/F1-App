@@ -68,13 +68,13 @@ body {
 }
 
 .right-side {
-  width: 280px;
-  flex-shrink: 0;
-  margin-left: auto;
-  overflow: auto;
-  background-color: #5E8B7E;
-  display: flex;
-  flex-direction: column;
+    width: 280px;
+    flex-shrink: 0;
+    margin-left: auto;
+    overflow: auto;
+    background-color: #5E8B7E;
+    display: flex;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 1210px) {
@@ -99,57 +99,57 @@ body {
     background-color: #2F5D62;
  }
 
- .logo {
-   font-family: "DM Sans", sans-serif;
-   font-size: 15px;
-   color: #fff;
-   font-weight: 600;
-   text-align: center;
-   height: 68px;
-   line-height: 68px;
-   letter-spacing: 4px;
-   position: sticky;
-   top: 0;
+.logo {
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    height: 68px;
+    line-height: 68px;
+    letter-spacing: 4px;
+    position: sticky;
+    top: 0;
  }
 
- .side-wrapper {
-   padding: 30px;
- }
+.side-wrapper {
+    padding: 30px;
+}
 
- .side-title {
-   font-family: "DM Sans", sans-serif;
-   color: #fff;
-   font-size: 15px;
-   font-weight: 600;
-   margin-bottom: 20px;
- }
+.side-title {
+    font-family: "DM Sans", sans-serif;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
 
- .side-menu {
-   display: flex;
-   flex-direction: column;
-   font-size: 15px;
-   white-space: nowrap;
- }
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    white-space: nowrap;
+}
 
- .side-menu svg {
-   margin-right: 16px;
-   width: 16px;
- }
+.side-menu svg {
+    margin-right: 16px;
+    width: 16px;
+}
 
- .side-menu a {
-   text-decoration: none;
-   color: #fff;
-   display: flex;
-   align-items: center;
- }
+.side-menu a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
 
- .side-menu a:hover {
-   color: #fff;
- }
+.side-menu a:hover {
+    color: #fff;
+}
 
- .side-menu a:not(:last-child) {
-   margin-bottom: 20px;
- }
+.side-menu a:not(:last-child) {
+    margin-bottom: 20px;
+}
 
  .search-bar {
    height: 60px;
