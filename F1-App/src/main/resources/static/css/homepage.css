@@ -308,3 +308,13 @@ body {
 .intro {
     padding: 20px;
 }
+
+.intro-title {
+    font-family: "DM Sans", sans-serif;
+    color: #5c5e6e;
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
