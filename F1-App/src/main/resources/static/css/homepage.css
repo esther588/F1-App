@@ -259,3 +259,12 @@ body {
     object-fit: cover;
     border: 3px solid #151728;
 }
+
+.profile-name {
+  margin-left: 24px;
+  margin-bottom: 24px;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 600;
+  font-family: "DM Sans", sans-serif;
+}
