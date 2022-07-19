@@ -349,3 +349,8 @@ body {
     color: #1771d6;
     text-decoration: none;
 }
+
+.info-item svg {
+    width: 16px;
+    margin-right: 10px;
+}
