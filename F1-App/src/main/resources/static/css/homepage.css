@@ -275,3 +275,8 @@ body {
   position: relative;
   z-index: 2;
 }
+
+.timeline-left {
+  width: 310px;
+  flex-shrink: 0;
+}
