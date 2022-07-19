@@ -339,3 +339,7 @@ body {
     display: flex;
     color: #c3c5d5;
 }
+
+.info-item + .info-item {
+    margin-top: 14px;
+}
