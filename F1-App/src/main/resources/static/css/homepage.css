@@ -299,3 +299,8 @@ body {
     width: 100%;
   }
 }
+
+.box {
+  background-color: #151728;
+  border-radius: 4px;
+}
