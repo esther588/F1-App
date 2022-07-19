@@ -268,3 +268,10 @@ body {
   font-weight: 600;
   font-family: "DM Sans", sans-serif;
 }
+
+.timeline {
+  display: flex;
+  padding-top: 20px;
+  position: relative;
+  z-index: 2;
+}
