@@ -224,7 +224,7 @@ body {
     position: absolute;
     bottom: 0;
     padding-left: 200px;
-    background: #151728;
+    background: #5E8B7E;
     width: 100%;
     display: flex;
     border-radius: 0 0 4px 4px;
@@ -232,7 +232,7 @@ body {
 
 .profile-menu-link {
     padding: 20px 16px;
-    color: #5c5e6e;
+    color: #fff;
     transition: 0.3s;
     cursor: pointer;
 }
