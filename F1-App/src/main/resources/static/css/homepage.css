@@ -334,3 +334,8 @@ body {
 .info {
     font-size: 15px;
 }
+
+.info-item {
+    display: flex;
+    color: #c3c5d5;
+}
