@@ -354,3 +354,25 @@ body {
     width: 16px;
     margin-right: 10px;
 }
+
+.event {
+    position: relative;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.event-wrapper {
+    position: relative;
+}
+
+.event-img {
+    max-width: 100%;
+    display: block;
+    padding-bottom: 12px;
+}
+
+.event-date {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
