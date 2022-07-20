@@ -400,7 +400,7 @@ body {
 }
 
 .event-title {
-    color: #c3c5d5;
+    color: #fff;
     margin-bottom: 5px;
     font-family: "DM Sans", sans-serif;
     font-weight: 600;
@@ -408,7 +408,7 @@ body {
 }
 
 .event-subtitle {
-    color: #5c5e6e;
+    color: #fff;
     font-family: "DM Sans", sans-serif;
     font-size: 13px;
     font-weight: 500;
