@@ -370,3 +370,9 @@ body {
     display: block;
     padding-bottom: 12px;
 }
+
+.event-date {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
