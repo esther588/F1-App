@@ -364,3 +364,9 @@ body {
 .event-wrapper {
     position: relative;
 }
+
+.event-img {
+    max-width: 100%;
+    display: block;
+    padding-bottom: 12px;
+}
