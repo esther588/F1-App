@@ -419,3 +419,9 @@ body {
     margin-top: 20px;
     padding: 20px;
 }
+
+.user {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
