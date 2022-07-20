@@ -376,3 +376,13 @@ body {
     left: 20px;
     top: 15px;
 }
+
+.event-month {
+    background-color: #1687fa;
+    padding: 7px 20px;
+    font-weight: 600;
+    font-family: "DM Sans", sans-serif;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px 4px 0 0;
+}
