@@ -438,3 +438,8 @@ body {
     object-fit: cover;
     object-position: center;
 }
+
+.username {
+    font-size: 15px;
+    font-family: "DM Sans", sans-serif;
+}
