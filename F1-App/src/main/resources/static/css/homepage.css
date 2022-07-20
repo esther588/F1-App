@@ -360,3 +360,7 @@ body {
     margin-top: 20px;
     padding: 10px;
 }
+
+.event-wrapper {
+    position: relative;
+}
