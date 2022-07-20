@@ -425,3 +425,7 @@ body {
     align-items: center;
     cursor: pointer;
 }
+
+.user + .user {
+    margin-top: 18px;
+}
