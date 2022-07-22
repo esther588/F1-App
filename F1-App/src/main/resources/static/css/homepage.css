@@ -536,3 +536,14 @@ body {
         white-space: nowrap;
     }
 }
+
+.status-share {
+    background-color: #1b86f9;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-left: auto;
+    box-shadow: 0 0 20px #1b86f9;
+    cursor: pointer;
+}
