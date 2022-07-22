@@ -494,3 +494,13 @@ body {
     padding-bottom: 20px;
     flex-wrap: wrap;
 }
+
+.status-textarea {
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    resize: none;
+    margin-top: 15px;
+    color: #fff;
+    max-width: calc(100% - 70px);
+}
