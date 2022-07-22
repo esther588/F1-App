@@ -485,3 +485,12 @@ body {
     border-radius: 50%;
     margin-right: 20px;
 }
+
+.status-main {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #272a3a;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+}
