@@ -538,12 +538,12 @@ body {
 }
 
 .status-post {
-    background-color: #1b86f9;
+    background-color: #A7C4BC;
     border: none;
     color: #fff;
     border-radius: 4px;
     padding: 10px 20px;
     margin-left: auto;
-    box-shadow: 0 0 20px #1b86f9;
+    box-shadow: 0 0 20px #A7C4BC;
     cursor: pointer;
 }
