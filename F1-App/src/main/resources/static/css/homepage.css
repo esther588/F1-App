@@ -508,3 +508,8 @@ body {
 .status-textarea::placeholder {
     color: #5c5d71;
 }
+
+.status-actions {
+    display: flex;
+    padding: 10px 20px;
+}
