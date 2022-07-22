@@ -504,3 +504,7 @@ body {
     color: #fff;
     max-width: calc(100% - 70px);
 }
+
+.status-textarea::placeholder {
+    color: #5c5d71;
+}
