@@ -513,3 +513,11 @@ body {
     display: flex;
     padding: 10px 20px;
 }
+
+.status-action {
+    text-decoration: none;
+    color: #ccc8db;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
