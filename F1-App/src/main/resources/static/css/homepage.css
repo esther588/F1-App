@@ -459,3 +459,8 @@ body {
     font-weight: 500;
     border-radius: 20px;
 }
+
+.status-menu-item.active, .status-menu-item:hover {
+    background-color: #2e2e40;
+    color: #fff;
+}
