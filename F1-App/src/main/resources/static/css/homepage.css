@@ -527,3 +527,12 @@ body {
     flex-shrink: 0;
     margin-right: 8px;
 }
+
+@media screen and (max-width: 1320px) {
+    .status-action {
+        width: 16px;
+        overflow: hidden;
+        color: transparent;
+        white-space: nowrap;
+    }
+}
