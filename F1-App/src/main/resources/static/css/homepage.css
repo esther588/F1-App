@@ -449,3 +449,13 @@ body {
     display: flex;
     align-items: center;
 }
+
+.status-menu-item {
+    text-decoration: none;
+    color: #ccc8db;
+    padding: 10px 14px;
+    line-height: 0.7;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    border-radius: 20px;
+}
