@@ -521,3 +521,9 @@ body {
     display: flex;
     align-items: center;
 }
+
+.status-action svg {
+    width: 16px;
+    flex-shrink: 0;
+    margin-right: 8px;
+}
