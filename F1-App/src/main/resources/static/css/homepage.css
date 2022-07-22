@@ -464,3 +464,7 @@ body {
     background-color: #2e2e40;
     color: #fff;
 }
+
+.status-menu-item + .status-menu-item {
+    margin-left: 10px;
+}
