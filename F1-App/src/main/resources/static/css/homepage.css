@@ -562,3 +562,7 @@ body {
     margin-bottom: auto;
     margin-top: 5px;
 }
+
+.album-detail {
+    width: calc(100% - 110px);
+}
