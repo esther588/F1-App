@@ -552,3 +552,8 @@ body {
     padding-top: 20px;
     margin-top: 20px;
 }
+
+.album .status-main {
+    border: none;
+    display: flex;
+}
